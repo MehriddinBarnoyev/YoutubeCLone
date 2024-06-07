@@ -156,8 +156,8 @@ const VideoDetail = () => {
           </Box>
           <Box>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-              <Typography variant="h5">{video.name}</Typography>
-              <FollowButton row={video} />
+              <Typography variant="h5" sx={{fontWeight:"700", mt:2}}>{video.name}</Typography>
+              <FollowButton row={video}  />
               <LikeButton />
             </Box>
             <Typography variant="body1">{video.productMade}</Typography>

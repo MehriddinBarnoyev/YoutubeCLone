@@ -207,7 +207,7 @@ export default function MiniDrawer({ children }) {
           <Box sx={{ display: "flex" }}>
             {/* <NotificationsNoneIcon/> */}
             <MenuItem sx={{me:5}}>
-              <Badge badgeContent={17} color="error">
+              <Badge badgeContent={17} max={9} color="error">
                 <NotificationsIcon sx={{ color: "black" }} />
               </Badge>
               

@@ -13,6 +13,7 @@ const Buttons = () => {
     "Love story",
     "UFC",
     "Ronaldo",
+    "ufc"
   ];
 
   return (
@@ -29,6 +30,7 @@ const Buttons = () => {
               padding: "2px 26px",
               fontSize: "14px",
               fontWeight: "600",
+              
             }}
           >
             {title}

@@ -18,7 +18,7 @@ const FollowButton = ({ row }) => {
 
   return (
     <Box>
-      <Button onClick={FollowHandle}>Subscribe</Button>
+      <Button onClick={FollowHandle} sx={{mt:2}}>Subscribe</Button>
     </Box>
   );
 };
