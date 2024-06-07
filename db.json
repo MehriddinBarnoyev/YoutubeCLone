@@ -1,0 +1,128 @@
+{
+  "video": [
+    {
+      "id": 1,
+      "videoLink": "https://youtu.be/uVCDKfV69wA?si=3gSRN6oQ-9CCM7jr",
+      "name": "Gaybulla Tursunov - Janona (Premyera)",
+      "views": 1985,
+      "productMade": "Shox Media",
+      "status": false
+    },
+    {
+      "id": 2,
+      "videoLink": "https://youtu.be/9SGDpanrc8U?si=jHQnPCQ0WnYLdQmW",
+      "name": "Spring boot and Spring Rest",
+      "views": 1558412,
+      "productMade": "Shox Media",
+      "status": false
+    },
+    {
+      "id": 3,
+      "videoLink": "https://youtu.be/bqWP7SbqZyA?si=Nsdr9W5t5TXqB2fn",
+      "name": "Mirjalol Ne'matov - Bir soniya qol",
+      "views": 98526,
+      "productMade": "Shox Media",
+      "status": false
+    },
+    {
+      "id": 4,
+      "videoLink": "https://youtu.be/CBQyLdubXzY?si=aeJMiaTFtOPfZASJ",
+      "name": "Izzat Shukuruv - Assalamu alayka ",
+      "views": 98526,
+      "productMade": "Shox Media",
+      "status": false
+    },
+    {
+      "id": 5,
+      "videoLink": "https://youtu.be/PwQmPLjnSPo?si=2WCW3XpOjUI28Kr3",
+      "name": "Faouzia - RIP, Love (Official Lyric Video)",
+      "views": 8200000,
+      "productMade": "Shox Media",
+      "status": false
+    },
+    {
+      "id": 6,
+      "videoLink": "https://youtu.be/8jXbBZEPiWk?si=EbOe2KpGZKnLhkTs",
+      "name": "ENISA - Mockingbird (2024 Studio Version)",
+      "views": 8200000,
+      "productMade": "Shox Media",
+      "status": false
+    },
+    {
+      "id": 7,
+      "videoLink": "https://youtu.be/Z0PlCKkncZM?si=BGiwvbb_mOfvu85M",
+      "name": "Billie Eilish - lovely ( Lyrics) ft.Khalid",
+      "views": 8200000,
+      "productMade": "Shox Media",
+      "status": false
+    },
+    {
+      "id": 8,
+      "videoLink": "https://youtu.be/50VNCymT-Cs?si=-bW7mo9lJvIxCtED",
+      "name": "Alec Benjamin - Let Me Down Slowly [Official Music Video]",
+      "views": 8200000,
+      "productMade": "Shox Media",
+      "status": false
+    },
+    {
+      "id": 9,
+      "videoLink": "https://youtu.be/JGwWNGJdvx8?si=mpGTDtI_9mm37ocq",
+      "name": "Ed Sheeran - Shape of You (Official Music Video)",
+      "views": 8200000,
+      "productMade": "Shox Media",
+      "status": false
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2a69",
+      "postId": "9",
+      "text": "salom"
+    },
+    {
+      "id": "84c4",
+      "postId": 9,
+      "text": "salom"
+    },
+    {
+      "id": "91b6",
+      "postId": 8,
+      "text": "Alec"
+    },
+    {
+      "id": "cf0a",
+      "postId": "1",
+      "text": "Salom"
+    },
+    {
+      "id": "c974",
+      "postId": 4,
+      "text": "Ajoyib musiqa"
+    },
+    {
+      "id": "afa8",
+      "postId": 4,
+      "text": "Goof"
+    },
+    {
+      "id": "7e9c",
+      "postId": 2,
+      "text": "fghjkl;'"
+    },
+    {
+      "id": "2b34",
+      "postId": 7,
+      "text": "vazifa4"
+    }
+  ]
+}
