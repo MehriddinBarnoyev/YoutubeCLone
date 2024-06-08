@@ -28,7 +28,7 @@ const LikeButton = () => {
   );
 
   return (
-    <div className="d-flex pe-3">
+    <div className="d-flex pe-3 pt-1">
       <Box>
         <Tooltip title={"Share"}>
           <Button

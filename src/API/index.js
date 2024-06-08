@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "http://localhost:4000",
 });
 
 const getVideos = async () => {
@@ -9,17 +9,27 @@ const getVideos = async () => {
     const videoResponse = await instance.get("/video");
     return videoResponse.data;
   } catch (error) {
-    console.error("Error fetching videos:", error);
+    console.error("Videolar olishda xato:", error);
     return [];
   }
 };
 
-const getComments = async () => {
+const getVideoById = async (id) => {
   try {
-    const commentResponse = await instance.get("/comments");
+    const videoResponse = await instance.get(`/video/${id}`);
+    return videoResponse.data;
+  } catch (error) {
+    console.error("Videoni olishda xato:", error);
+    return null;
+  }
+};
+
+const getComments = async (videoId) => {
+  try {
+    const commentResponse = await instance.get(`/comments?postId=${videoId}`);
     return commentResponse.data;
   } catch (error) {
-    console.error("Error fetching comments:", error);
+    console.error("Fikrlarni olishda xato:", error);
     return [];
   }
 };
@@ -29,9 +39,9 @@ const followAction = async (body) => {
     const res = await instance.put(`/subscribe/${body.id}`, body);
     return { success: true, data: res.data };
   } catch (error) {
-    console.error("Error in follow action:", error);
+    console.error("Obunani amalga oshirishda xato:", error);
     return { success: false };
   }
 };
 
-export { getVideos, getComments, followAction };
+export { getVideos, getVideoById, getComments, followAction };
