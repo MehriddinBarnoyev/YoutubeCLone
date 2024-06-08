@@ -1,24 +1,31 @@
+// FollowButton.js
+
 import { Box, Button } from "@mui/material";
 import React from "react";
 import { followAction } from "../../../API";
 
 const FollowButton = ({ row }) => {
-  const FollowHandle = async () => {
+  const handleSubscribe = async () => {
     try {
       const result = await followAction({ id: row.id, ...row, status: true });
       if (result.success) {
-        console.log("Follow action successful", result.data);
+        console.log("Subscription successful", result.data);
+        // Optionally, you can update UI or show a success message
       } else {
-        console.error("Follow action failed");
+        console.error("Subscription failed");
+        // Optionally, you can handle failure scenarios
       }
     } catch (error) {
-      console.error("An error occurred while following:", error);
+      console.error("An error occurred while subscribing:", error);
+      // Optionally, you can handle error scenarios
     }
   };
 
   return (
     <Box>
-      <Button onClick={FollowHandle} sx={{mt:2}}>Subscribe</Button>
+      <Button onClick={handleSubscribe} sx={{ mt: 2 }}>
+        Subscribe
+      </Button>
     </Box>
   );
 };

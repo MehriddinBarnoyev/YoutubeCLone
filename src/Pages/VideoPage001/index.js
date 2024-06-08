@@ -7,7 +7,6 @@ import {
   Card,
   Grid,
   Divider,
-  Button,
 } from "@mui/material";
 import { getVideos, getComments } from "../../API";
 import CommentTube from "../Comment/comment";
@@ -27,7 +26,7 @@ const extractEmbedLink = (url) => {
   return url;
 };
 
-const VideoDetail = () => {
+const VideoPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [video, setVideo] = useState(null);
@@ -78,8 +77,7 @@ const VideoDetail = () => {
     navigate(`/video/${videoId}`);
   };
 
-  const addComment = (videoId, comment) => {
-    const newComment = { text: comment, postId: videoId };
+  const addComment = (newComment) => {
     setComments((prevComments) => [...prevComments, newComment]);
   };
 
@@ -156,10 +154,13 @@ const VideoDetail = () => {
           </Box>
           <Box>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-              <Typography variant="h5" sx={{fontWeight:"700", mt:2}}>{video.name}</Typography>
-              <FollowButton row={video}  />
+              <Typography variant="h5" sx={{ fontWeight: "700", mt: 2 }}>
+                {video.name}
+              </Typography>
+              <FollowButton row={video} />
               <LikeButton />
             </Box>
+
             <Typography variant="body1">{video.productMade}</Typography>
             <Typography variant="body2">
               {video.views.toLocaleString()} views
@@ -225,4 +226,4 @@ const VideoDetail = () => {
   );
 };
 
-export default VideoDetail;
+export default VideoPage;

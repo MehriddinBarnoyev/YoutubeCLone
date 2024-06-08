@@ -1,5 +1,3 @@
-// Pages/HomePage.js
-
 import React, { useEffect, useState } from "react";
 import { Box, Card, Typography, CircularProgress } from "@mui/material";
 import { getVideos } from "../../API";
@@ -8,14 +6,9 @@ import Buttons from "../../Components/Buttons";
 
 const extractEmbedLink = (url) => {
   if (!url) return "";
-
-  if (url.includes("embed/")) {
-    return url;
-  } else if (url.includes("watch?v=")) {
-    return url.replace("watch?v=", "embed/");
-  } else if (url.includes("youtu.be/")) {
-    return url.replace("youtu.be/", "www.youtube.com/embed/");
-  }
+  if (url.includes("embed/")) return url;
+  if (url.includes("watch?v=")) return url.replace("watch?v=", "embed/");
+  if (url.includes("youtu.be/")) return url.replace("youtu.be/", "www.youtube.com/embed/");
   return url;
 };
 
@@ -41,7 +34,7 @@ const HomePage = () => {
   }, []);
 
   const handleVideoClick = (id) => {
-    navigate(`/video/${id}`); // Navigate to the VideoDetail page
+    navigate(`/video/${id}`);
   };
 
   if (loading) {

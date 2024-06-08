@@ -3,6 +3,7 @@ import { Box, Typography, TextField, Button } from "@mui/material";
 
 const CommentTube = ({ videoId, comments, addComment }) => {
   const [comment, setComment] = useState("");
+  const [submitMessage, setSubmitMessage] = useState("");
 
   const handleCommentChange = (e) => {
     setComment(e.target.value);
@@ -28,8 +29,11 @@ const CommentTube = ({ videoId, comments, addComment }) => {
         const newComment = await response.json();
         addComment(newComment); // Update the comments state with the new comment
         setComment("");
+        setSubmitMessage("Comment submitted successfully!");
+        setTimeout(() => setSubmitMessage(""), 3000); // Clear message after 3 seconds
       } catch (error) {
         console.error(error);
+        setSubmitMessage("Failed to submit comment.");
       }
     }
   };
@@ -40,7 +44,7 @@ const CommentTube = ({ videoId, comments, addComment }) => {
       <Box
         component="form"
         onSubmit={handleCommentSubmit}
-        sx={{ marginBottom: "20px" }}
+        sx={{ marginBottom: "20px", paddingTop:"20px" }}
       >
         <TextField
           fullWidth
@@ -53,6 +57,11 @@ const CommentTube = ({ videoId, comments, addComment }) => {
         <Button type="submit" variant="contained">
           Submit
         </Button>
+        {submitMessage && (
+          <Typography variant="body2" sx={{ marginTop: "10px", color: "green" }}>
+            {submitMessage}
+          </Typography>
+        )}
       </Box>
       {comments.map((comment, index) => (
         <Box key={index} sx={{ marginBottom: "10px" }}>

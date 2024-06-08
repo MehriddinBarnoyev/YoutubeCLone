@@ -9,7 +9,7 @@ const getVideos = async () => {
     const videoResponse = await instance.get("/video");
     return videoResponse.data;
   } catch (error) {
-    console.error("Error fetching videos:", error);
+    console.error("Videolar olishda xato:", error);
     return [];
   }
 };
@@ -19,7 +19,7 @@ const getComments = async () => {
     const commentResponse = await instance.get("/comments");
     return commentResponse.data;
   } catch (error) {
-    console.error("Error fetching comments:", error);
+    console.error("Fikrlarni olishda xato:", error);
     return [];
   }
 };
@@ -29,7 +29,7 @@ const followAction = async (body) => {
     const res = await instance.put(`/subscribe/${body.id}`, body);
     return { success: true, data: res.data };
   } catch (error) {
-    console.error("Error in follow action:", error);
+    console.error("Obunani amalga oshirishda xato:", error);
     return { success: false };
   }
 };

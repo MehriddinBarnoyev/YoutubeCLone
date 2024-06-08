@@ -6,7 +6,8 @@
       "name": "Gaybulla Tursunov - Janona (Premyera)",
       "views": 1985,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Gaybulla Tursunov"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "name": "Spring boot and Spring Rest",
       "views": 1558412,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Senior Java developer"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "name": "Mirjalol Ne'matov - Bir soniya qol",
       "views": 98526,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Mirjalol Ne'matov"
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "name": "Izzat Shukuruv - Assalamu alayka ",
       "views": 98526,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Izzat Shukuruv"
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "name": "Faouzia - RIP, Love (Official Lyric Video)",
       "views": 8200000,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Faouzia"
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "name": "ENISA - Mockingbird (2024 Studio Version)",
       "views": 8200000,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Enisa"
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "name": "Billie Eilish - lovely ( Lyrics) ft.Khalid",
       "views": 8200000,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Billie Elish"
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "name": "Alec Benjamin - Let Me Down Slowly [Official Music Video]",
       "views": 8200000,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Alec Benjamin"
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "name": "Ed Sheeran - Shape of You (Official Music Video)",
       "views": 8200000,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Ed Sheeran"
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "name": "Ehsan Daryadel - Lalaei | OFFICIAL TRACK",
       "views": 5600000,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Ehsan Daryadel"
     },
     {
       "id": 11,
@@ -86,7 +96,8 @@
       "name": "Xojiakbar Ruzmetov - Yor ishqida (Mood video)",
       "views": 5900000,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Xojiakbar Ruzmetov"
     },
     {
       "id": 12,
@@ -94,59 +105,39 @@
       "name": "Konsta & Timur Alixonov - Odamlar nima deydi ? (Official Music Video)",
       "views": 5600000,
       "productMade": "Shox Media",
-      "status": false
+      "status": false,
+      "maker": "Konsta"
     }
   ],
   "comments": [
     {
-      "id": "1",
-      "text": "a comment about post 1",
-      "postId": "1"
-    },
-    {
-      "id": "2",
-      "text": "another comment about post 1",
-      "postId": "1"
-    },
-    {
-      "id": "2a69",
-      "postId": "9",
-      "text": "salom"
-    },
-    {
-      "id": "84c4",
-      "postId": 9,
-      "text": "salom"
-    },
-    {
-      "id": "91b6",
-      "postId": 8,
-      "text": "Alec"
-    },
-    {
-      "id": "cf0a",
-      "postId": "1",
-      "text": "Salom"
-    },
-    {
-      "id": "c974",
-      "postId": 4,
+      "id": "a365",
+      "postId": 3,
       "text": "Ajoyib musiqa"
     },
     {
-      "id": "afa8",
-      "postId": 4,
-      "text": "Goof"
+      "id": "ffa7"
     },
     {
-      "id": "7e9c",
-      "postId": 2,
-      "text": "fghjkl;'"
+      "id": "3cff"
     },
     {
-      "id": "2b34",
-      "postId": 7,
-      "text": "vazifa4"
+      "id": "69d2"
+    },
+    {
+      "id": "6e7e",
+      "postId": 8,
+      "text": "ajoyib"
+    },
+    {
+      "id": "7c5a",
+      "postId": 8,
+      "text": "Let me down"
+    },
+    {
+      "id": "6841",
+      "postId": 8,
+      "text": "slowly"
     }
   ]
 }
