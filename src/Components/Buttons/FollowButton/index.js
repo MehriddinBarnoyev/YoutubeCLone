@@ -1,6 +1,6 @@
 // FollowButton.js
 
-import {Box, Button, Tooltip} from "@mui/material";
+import { Box, Button } from "@mui/material";
 import React from "react";
 import { followAction } from "../../../API";
 
@@ -23,12 +23,9 @@ const FollowButton = ({ row }) => {
 
   return (
     <Box>
-      <Tooltip title="Subscribe">
-        <Button onClick={handleSubscribe} sx={{ mt: 2 }}>
-          Subscribe
-        </Button>
-      </Tooltip>
-
+      <Button onClick={handleSubscribe} sx={{ mt: 2 }}>
+        Subscribe
+      </Button>
     </Box>
   );
 };
