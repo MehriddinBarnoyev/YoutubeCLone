@@ -39,25 +39,27 @@ const LikeButton = () => {
           </Button>
         </Tooltip>
       </Box>
-      <Tooltip title={"I like this"}>
-        <Box sx={{ position: "relative" }}>
-          <Button startIcon={icon2} onClick={increment}>
-            {count}
-          </Button>
-          <Confetti
-            active={showConfetti}
-            config={{
-              spread: 45,
-              startVelocity: 30,
-              elementCount: 50,
-              colors: ["#f00", "#0f0", "#00f", "#ffeb7f", "#FFFF00"],
-            }}
-          />
-        </Box>
-      </Tooltip>
+      <>
+        <Tooltip title={"I like this"}>
+          <Box sx={{ position: "relative" }}>
+            <Button startIcon={icon2} onClick={increment}>
+              {count}
+            </Button>
+            <Confetti
+              active={showConfetti}
+              config={{
+                spread: 45,
+                startVelocity: 30,
+                elementCount: 50,
+                colors: ["#f00", "#0f0", "#00f", "#ffeb7f", "#FFFF00"],
+              }}
+            />
+          </Box>
+        </Tooltip>
+      </>
       <Box>
         <Tooltip title={"I dislike this"}>
-        <Button endIcon={icon1}></Button>
+          <Button endIcon={icon1}></Button>
         </Tooltip>
       </Box>
     </div>
