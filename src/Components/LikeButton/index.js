@@ -4,28 +4,24 @@ import ThumbDownIcon from "@mui/icons-material/ThumbDown";
 import { Box, Button, Tooltip } from "@mui/material";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import Confetti from "react-dom-confetti";
+import { likeAction } from "../../API";
 
-const LikeButton = () => {
+const LikeButton = ({ videoId }) => {
   const [count, setCount] = useState(0);
   const [showConfetti, setShowConfetti] = useState(false);
 
-  const increment = () => {
-    setCount(count + 1);
-    setShowConfetti(true);
-    setTimeout(() => setShowConfetti(false), 100); // Show confetti briefly
+  const incrementButton = async () => {
+    try {
+      const response = await likeAction(videoId);
+      if (response.success) {
+        setCount(count +1);
+        setShowConfetti(true);
+        setTimeout(() => setShowConfetti(false), 1000);
+      }
+    } catch (error) {
+      console.error("Failed to like the video:", error);
+    }
   };
-
-  const icon1 = (
-    <Box color={"grey"}>
-      <ThumbDownIcon />
-    </Box>
-  );
-
-  const icon2 = (
-    <Box color={"grey"}>
-      <ThumbUpIcon />
-    </Box>
-  );
 
   return (
     <div className="d-flex pe-3 pt-1">
@@ -42,7 +38,7 @@ const LikeButton = () => {
       <>
         <Tooltip title={"I like this"}>
           <Box sx={{ position: "relative" }}>
-            <Button startIcon={icon2} onClick={increment}>
+            <Button startIcon={<ThumbUpIcon />}  onClick={incrementButton}>
               {count}
             </Button>
             <Confetti
@@ -59,7 +55,7 @@ const LikeButton = () => {
       </>
       <Box>
         <Tooltip title={"I dislike this"}>
-          <Button endIcon={icon1}></Button>
+          <Button endIcon={<ThumbDownIcon />}></Button>
         </Tooltip>
       </Box>
     </div>

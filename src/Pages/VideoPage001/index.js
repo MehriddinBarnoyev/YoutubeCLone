@@ -91,15 +91,26 @@ const VideoPage001 = () => {
   if (!currentVideo) {
     return null;
   }
+
   const videoContainer = document.getElementById("video");
 
-  const onRenderCallback = (id, phase, actualDuration,baseDuration, startTime, commitTime) =>{
-    console.log(id, phase,actualDuration, baseDuration);
-    console.log(`%c${startTime} - ${commitTime}`, "color: green; font-size:24px");
-  }
+  const onRenderCallback = (
+    id,
+    phase,
+    actualDuration,
+    baseDuration,
+    startTime,
+    commitTime
+  ) => {
+    console.log(id, phase, actualDuration, baseDuration);
+    console.log(
+      `%c${startTime} - ${commitTime}`,
+      "color: green; font-size:24px"
+    );
+  };
 
   const videoContent = (
-    <Profiler id="videoProfiller" onRender={onRenderCallback}>
+    <Profiler id="videoProfiler" onRender={onRenderCallback}>
       <Box sx={{ paddingLeft: "80px" }}>
         <Grid container spacing={2}>
           <Grid item xs={8}>
@@ -127,16 +138,23 @@ const VideoPage001 = () => {
               />
             </Box>
             <Box sx={{ padding: "20px" }}>
-              <Box sx={{ display: "flex" }}>
-                <Typography variant="h4" sx={{ paddingTop: "10px" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: "10px",
+                }}
+              >
+                <Typography variant="h4" sx={{ paddingRight: "10px" }}>
                   {currentVideo.name}
                 </Typography>
                 <ErrorBoundary>
                   <FollowButton />
-                  <LikeButton />
+                </ErrorBoundary>
+                <ErrorBoundary>
+                  <LikeButton videoId={id} />
                 </ErrorBoundary>
               </Box>
-
               <Typography variant="body1">
                 {currentVideo.productMade}
               </Typography>
@@ -198,7 +216,7 @@ const VideoPage001 = () => {
     </Profiler>
   );
 
-  return createPortal(videoContent, videoContainer);
+  return videoContainer ? createPortal(videoContent, videoContainer) : null;
 };
 
 export default VideoPage001;

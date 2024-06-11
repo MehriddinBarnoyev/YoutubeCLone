@@ -24,8 +24,7 @@ import KeyboardIcon from "@mui/icons-material/Keyboard";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { NavLink } from "react-router-dom";
 import { Avatar, Badge, Link, Menu, MenuItem, Tooltip } from "@mui/material";
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
+const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const menu = [
   {
@@ -115,12 +114,9 @@ const Drawer = styled(MuiDrawer, {
 export default function MiniDrawer({ children }) {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
- 
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
-
- 
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
@@ -206,41 +202,42 @@ export default function MiniDrawer({ children }) {
           </Box>
           <Box sx={{ display: "flex" }}>
             {/* <NotificationsNoneIcon/> */}
-            <MenuItem sx={{me:5}}>
-              <Badge badgeContent={17} max={9} color="error">
-                <NotificationsIcon sx={{ color: "black" }} />
-              </Badge>
-              
+            <MenuItem sx={{ me: 5 }}>
+              <Tooltip title={"Notifications"}>
+                <Badge badgeContent={17} max={9} color="error">
+                  <NotificationsIcon sx={{ color: "black" }} />
+                </Badge>
+              </Tooltip>
             </MenuItem>
             <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/3.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+              <Tooltip title="Open settings">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <Avatar alt="Remy Sharp" src="/static/images/avatar/3.jpg" />
+                </IconButton>
+              </Tooltip>
+              <Menu
+                sx={{ mt: "45px" }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
+              >
+                {settings.map((setting) => (
+                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                    <Typography textAlign="center">{setting}</Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>

@@ -7,25 +7,12 @@
       "views": 1985,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Gaybulla Tursunov"
+      "maker": "Gaybulla Tursunov",
+      "likes": false,
+      "likeNumber": 0
     },
     {
-      "id": "2",
-      "videoLink": "https://youtu.be/9SGDpanrc8U?si=jHQnPCQ0WnYLdQmW",
-      "name": "Spring boot and Spring Rest",
-      "views": 1558412,
-      "productMade": "Shox Media",
-      "status": false,
-      "maker": "Senior Java developer"
-    },
-    {
-      "id": "3",
-      "videoLink": "https://youtu.be/bqWP7SbqZyA?si=Nsdr9W5t5TXqB2fn",
-      "name": "Mirjalol Ne'matov - Bir soniya qol",
-      "views": 98526,
-      "productMade": "Shox Media",
-      "status": false,
-      "maker": "Mirjalol Ne'matov"
+      "id": "3"
     },
     {
       "id": "4",
@@ -34,7 +21,9 @@
       "views": 98526,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Izzat Shukuruv"
+      "maker": "Izzat Shukuruv",
+      "likes": false,
+      "likeNumber": 0
     },
     {
       "id": "5",
@@ -43,7 +32,9 @@
       "views": 8200000,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Faouzia"
+      "maker": "Faouzia",
+      "likes": false,
+      "likeNumber": 0
     },
     {
       "id": "6",
@@ -52,7 +43,9 @@
       "views": 8200000,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Enisa"
+      "maker": "Enisa",
+      "likes": false,
+      "likeNumber": 0
     },
     {
       "id": "7",
@@ -61,7 +54,9 @@
       "views": 8200000,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Billie Elish"
+      "maker": "Billie Elish",
+      "likes": false,
+      "likeNumber": 0
     },
     {
       "id": "8",
@@ -70,7 +65,9 @@
       "views": 8200000,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Alec Benjamin"
+      "maker": "Alec Benjamin",
+      "likes": false,
+      "likeNumber": 0
     },
     {
       "id": "9",
@@ -79,7 +76,9 @@
       "views": 8200000,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Ed Sheeran"
+      "maker": "Ed Sheeran",
+      "likes": false,
+      "likeNumber": 0
     },
     {
       "id": "10",
@@ -88,7 +87,9 @@
       "views": 5600000,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Ehsan Daryadel"
+      "maker": "Ehsan Daryadel",
+      "likes": false,
+      "likeNumber": 0
     },
     {
       "id": "11",
@@ -97,7 +98,9 @@
       "views": 5900000,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Xojiakbar Ruzmetov"
+      "maker": "Xojiakbar Ruzmetov",
+      "likes": false,
+      "likeNumber": 0
     },
     {
       "id": "12",
@@ -106,7 +109,9 @@
       "views": 5600000,
       "productMade": "Shox Media",
       "status": false,
-      "maker": "Konsta"
+      "maker": "Konsta",
+      "likes": false,
+      "likeNumber": 0
     }
   ],
   "comments": [
@@ -163,6 +168,11 @@
       "id": "8ae8",
       "postId": "7",
       "text": "Elish"
+    },
+    {
+      "id": "0f9e",
+      "postId": "2",
+      "text": "Java development"
     }
   ]
 }
