@@ -102,10 +102,11 @@
       "productMade": "Shox Media",
       "status": false,
       "maker": "Alec Benjamin",
-      "likes": false,
-      "likeNumber": 0,
+      "likes": true,
+      "likeNumber": 2,
       "dislike": false,
-      "dislikeNumber": 0
+      "dislikeNumber": 3,
+      "dislikes": true
     },
     {
       "id": "9",

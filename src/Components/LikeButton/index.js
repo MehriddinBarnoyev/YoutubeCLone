@@ -43,8 +43,6 @@ const LikeButton = ({ videoId }) => {
       setCount2(prevCount2 => prevCount2 + 1); // Increment dislike count
       setLiked(false);
       setDisliked(true);
-      setShowConfetti(true);
-      setTimeout(() => setShowConfetti(false), 100);
     }
   };
 
